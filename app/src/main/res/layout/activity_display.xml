@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8BC34A"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".DisplayActivity">
+
+    <LinearLayout
+        android:id="@+id/dispLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ACC1"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/totalAmountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff3f6ff"
+            android:textStyle="bold"
+            android:text="@string/food_total_text"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:text="|"
+            android:textColor="#ffee1d27"
+            android:textSize="27sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/totalItemTV"
+            android:textColor="#ff212121"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/food_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@+id/dispLL"
+        android:dividerHeight="2dp"
+        android:divider="#212121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+
+</RelativeLayout>
